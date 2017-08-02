@@ -1,0 +1,59 @@
+<?php
+  $navs = D('Menu')->getHomeTrueMenus();
+  $config = D('Basic')->select();
+?>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{$config.title}</title>
+  <meta name="keywords" content="{$config.keywords}" />
+  <meta name="description" content="{$config.description}" />
+  <link rel="stylesheet" href="/Public/css/bootstrap.min.css" type="text/css" />
+  <link href="/Public/css/home/jquery.bxslider.css" rel="stylesheet">
+  <!-- Custom Fonts -->
+  <link href="/Public/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="./Public/css/sing/common.css" />
+  <!-- Custom styles for this template -->
+  <link href="/Public/css/home/style.css" rel="stylesheet">
+  <link href="/Public/css/home/main.css" rel="stylesheet">
+
+  
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/" <if condition="$result['catid'] eq 0">class="curr"</if>>首页</a></li>
+            <foreach name="navs" item="nav">
+              <li><a href="/index.php?c=cat&id={$nav.menu_id}" <if condition="$nav['menu_id'] eq $result['catid']">class="curr"</if>>{$nav.name}</a></li>
+            </foreach>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+            <li><a href="#"><i class="fa fa-reddit"></i></a></li>
+          </ul>
+
+
+        </div>
+        <!--/.nav-collapse -->
+      </div>
+    </nav>

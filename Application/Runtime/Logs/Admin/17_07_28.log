@@ -1,0 +1,256 @@
+[ 2017-07-28T23:01:31+08:00 ] 127.0.0.1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000559s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000919s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000249s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.172022s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.172124s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015923s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015989s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000688s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000763s ]
+
+[ 2017-07-28T23:01:39+08:00 ] 127.0.0.1 /admin.php?a=check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000689s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000712s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000790s ]
+NOTIC: [2048] Declaration of Common\Model\AdminModel::select() should be compatible with Think\Model::select($options = Array) C:\xampp\htdocs\Application\Common\Model\AdminModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0284s ]
+SQL: SELECT * FROM `cms_admin` WHERE ( username="ycj" ) LIMIT 1   [ RunTime:0.0017s ]
+SQL: UPDATE `cms_admin` SET `lastlogintime`='1501254099' WHERE ( admin_id=3 ) [ RunTime:0.0011s ]
+
+[ 2017-07-28T23:01:40+08:00 ] 127.0.0.1 /admin.php?c=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000595s ]
+NOTIC: [2048] Declaration of Common\Model\AdminModel::select() should be compatible with Think\Model::select($options = Array) C:\xampp\htdocs\Application\Common\Model\AdminModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0127s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_admin` WHERE `status` = 1 AND `lastlogintime` > 1501171200 LIMIT 1   [ RunTime:0.0015s ]
+NOTIC: [2048] Declaration of Common\Model\NewsModel::select() should be compatible with Think\Model::select($options = Array) C:\xampp\htdocs\Application\Common\Model\NewsModel.class.php 第 99 行.
+SQL: SHOW COLUMNS FROM `cms_news` [ RunTime:0.0097s ]
+SQL: SELECT * FROM `cms_news` WHERE `status` = 1 ORDER BY count desc LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_news` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2048] Declaration of Common\Model\PositionModel::select() should be compatible with Think\Model::select($options = Array) C:\xampp\htdocs\Application\Common\Model\PositionModel.class.php 第 53 行.
+SQL: SHOW COLUMNS FROM `cms_position` [ RunTime:0.0312s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cms_position` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0322s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` = 1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant index - assumed 'index' C:\xampp\htdocs\Application\Common\Common\function.php 第 41 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' C:\xampp\htdocs\Application\Common\Common\function.php 第 41 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' C:\xampp\htdocs\Application\Common\Common\function.php 第 41 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' C:\xampp\htdocs\Application\Common\Common\function.php 第 41 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' C:\xampp\htdocs\Application\Common\Common\function.php 第 41 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' C:\xampp\htdocs\Application\Common\Common\function.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.133888s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.133940s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000529s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000979s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001075s ]
+
+[ 2017-07-28T23:01:42+08:00 ] 127.0.0.1 /admin.php?c=admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000718s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000787s ]
+NOTIC: [2048] Declaration of Common\Model\AdminModel::select() should be compatible with Think\Model::select($options = Array) C:\xampp\htdocs\Application\Common\Model\AdminModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0206s ]
+SQL: SELECT * FROM `cms_admin` WHERE `status` <> -1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0102s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` = 1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant index - assumed 'index' C:\xampp\htdocs\Application\Common\Common\function.php 第 41 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' C:\xampp\htdocs\Application\Common\Common\function.php 第 41 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' C:\xampp\htdocs\Application\Common\Common\function.php 第 41 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' C:\xampp\htdocs\Application\Common\Common\function.php 第 41 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' C:\xampp\htdocs\Application\Common\Common\function.php 第 41 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' C:\xampp\htdocs\Application\Common\Common\function.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060610s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060686s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000980s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001054s ]
+
+[ 2017-07-28T23:03:19+08:00 ] 127.0.0.1 /admin.php?c=basic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000671s ]
+NOTIC: [2048] Declaration of Common\Model\BasicModel::save() should be compatible with Think\Model::save($data = '', $options = Array) C:\xampp\htdocs\Application\Common\Model\BasicModel.class.php 第 7 行.
+NOTIC: [2048] Declaration of Common\Model\BasicModel::select() should be compatible with Think\Model::select($options = Array) C:\xampp\htdocs\Application\Common\Model\BasicModel.class.php 第 7 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` = 1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant index - assumed 'index' C:\xampp\htdocs\Application\Common\Common\function.php 第 41 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' C:\xampp\htdocs\Application\Common\Common\function.php 第 41 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' C:\xampp\htdocs\Application\Common\Common\function.php 第 41 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' C:\xampp\htdocs\Application\Common\Common\function.php 第 41 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' C:\xampp\htdocs\Application\Common\Common\function.php 第 41 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' C:\xampp\htdocs\Application\Common\Common\function.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.079127s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079185s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000638s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000687s ]
+
+[ 2017-07-28T23:03:20+08:00 ] 127.0.0.1 /admin.php?c=admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000580s ]
+NOTIC: [2048] Declaration of Common\Model\AdminModel::select() should be compatible with Think\Model::select($options = Array) C:\xampp\htdocs\Application\Common\Model\AdminModel.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cms_admin` [ RunTime:0.0147s ]
+SQL: SELECT * FROM `cms_admin` WHERE `status` <> -1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0099s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` = 1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant index - assumed 'index' C:\xampp\htdocs\Application\Common\Common\function.php 第 41 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' C:\xampp\htdocs\Application\Common\Common\function.php 第 41 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' C:\xampp\htdocs\Application\Common\Common\function.php 第 41 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' C:\xampp\htdocs\Application\Common\Common\function.php 第 41 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' C:\xampp\htdocs\Application\Common\Common\function.php 第 41 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' C:\xampp\htdocs\Application\Common\Common\function.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023081s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023128s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000591s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000647s ]
+
+[ 2017-07-28T23:05:16+08:00 ] 127.0.0.1 /admin.php?c=basic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000724s ]
+NOTIC: [2048] Declaration of Common\Model\BasicModel::save() should be compatible with Think\Model::save($data = '', $options = Array) C:\xampp\htdocs\Application\Common\Model\BasicModel.class.php 第 7 行.
+NOTIC: [2048] Declaration of Common\Model\BasicModel::select() should be compatible with Think\Model::select($options = Array) C:\xampp\htdocs\Application\Common\Model\BasicModel.class.php 第 7 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` = 1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant index - assumed 'index' C:\xampp\htdocs\Application\Common\Common\function.php 第 41 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' C:\xampp\htdocs\Application\Common\Common\function.php 第 41 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' C:\xampp\htdocs\Application\Common\Common\function.php 第 41 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' C:\xampp\htdocs\Application\Common\Common\function.php 第 41 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' C:\xampp\htdocs\Application\Common\Common\function.php 第 41 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' C:\xampp\htdocs\Application\Common\Common\function.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032556s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000632s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000680s ]
+
+[ 2017-07-28T23:06:43+08:00 ] 127.0.0.1 /admin.php?c=basic&a=cache
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000966s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001063s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0162s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` = 1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant index - assumed 'index' C:\xampp\htdocs\Application\Common\Common\function.php 第 41 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' C:\xampp\htdocs\Application\Common\Common\function.php 第 41 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' C:\xampp\htdocs\Application\Common\Common\function.php 第 41 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' C:\xampp\htdocs\Application\Common\Common\function.php 第 41 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' C:\xampp\htdocs\Application\Common\Common\function.php 第 41 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' C:\xampp\htdocs\Application\Common\Common\function.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040049s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040127s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000453s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000658s ]
+
+[ 2017-07-28T23:06:46+08:00 ] 127.0.0.1 /admin.php?c=cron&a=dumpmysql_fast
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000586s ]
+
+[ 2017-07-28T23:06:47+08:00 ] 127.0.0.1 /admin.php?c=basic&a=cache
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001105s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001195s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+SQL: SHOW COLUMNS FROM `cms_menu` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `cms_menu` WHERE `status` = 1 AND `type` = 1 ORDER BY listorder desc,menu_id desc  [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant index - assumed 'index' C:\xampp\htdocs\Application\Common\Common\function.php 第 41 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' C:\xampp\htdocs\Application\Common\Common\function.php 第 41 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' C:\xampp\htdocs\Application\Common\Common\function.php 第 41 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' C:\xampp\htdocs\Application\Common\Common\function.php 第 41 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' C:\xampp\htdocs\Application\Common\Common\function.php 第 41 行.
+NOTIC: [8] Use of undefined constant index - assumed 'index' C:\xampp\htdocs\Application\Common\Common\function.php 第 41 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035062s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035114s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000578s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000628s ]
+

@@ -1,0 +1,82 @@
+
+<include file="Index/header" />
+<body>
+
+<div id="wrapper">
+
+    <include file="Index/nav"/>
+
+    <div id="page-wrapper">
+
+    <div class="container-fluid">
+
+        <!-- Page Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+
+                <ol class="breadcrumb">
+                    <include file="Basic/button" />
+ 
+                   
+                </ol>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label for="inputname" class="col-sm-2 control-label">更新缓存首页:</label>
+                    <div class="col-sm-5">
+                        <button type="button" class="btn" id="cache-index">确定更新</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="form-group">
+                        <label for="inputname" class="col-sm-2 control-label">更新缓存其他页面:</label>
+                        <div class="col-sm-5">
+                            <button type="button" class="btn" id="cache-other">确定更新</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+         <div class="row">
+            <div class="col-lg-6">
+                <div class="form-group">
+                        <label for="inputname" class="col-sm-2 control-label">手动备份数据库:</label>
+                        <div class="col-sm-5">
+                            <button type="button" class="btn" id="data-mysql">开始备份</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container-fluid -->
+
+</div>
+<!-- /#page-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+<!-- Morris Charts JavaScript -->
+<script>
+
+    var SCOPE = { 
+        'cache_url' : '/index.php?c=index&a=build_html',
+        'cache_cat_url' : '/index.php?c=cat&a=build_html',
+        'cache_detail_url' : '/index.php?c=detail&a=build_html',
+        'mysql_url' : '/admin.php?c=cron&a=dumpmysql_fast',
+    }
+
+</script>
+<include file="Index/footer" />
+
+
+
+
+

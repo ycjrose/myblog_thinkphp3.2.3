@@ -1,0 +1,1 @@
+a:5:{s:5:"title";s:13:"singcms资讯";s:8:"keywords";s:18:"科技体育汽车";s:11:"description";s:24:"提供最新网站服务";s:6:"static";s:1:"0";s:9:"dumpmysql";s:1:"0";}

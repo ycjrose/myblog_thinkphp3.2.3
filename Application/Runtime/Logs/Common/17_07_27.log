@@ -1,0 +1,96 @@
+[ 2017-07-27T09:27:53+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-07-27T13:28:53+08:00 ] ::1 /aliyun/ticketsystem/app/styles/ticketSystem/drcloud-loading.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.016403s ]
+ERR: 无法加载模块:Aliyun
+
+[ 2017-07-27T15:31:05+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000667s ]
+ERR: 无法加载模块:Favicon
+
+[ 2017-07-27T15:31:05+08:00 ] 127.0.0.1 /index.php?m=./Application&c=Runtime&a=index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+ERR: 无法加载模块:./Application
+
+[ 2017-07-27T15:31:41+08:00 ] 127.0.0.1 /index.php?m=./Application&c=Runtime&a=index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+ERR: 无法加载模块:./Application
+
+[ 2017-07-27T15:31:43+08:00 ] 127.0.0.1 /index.php?m=./Application&c=Runtime&a=index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+ERR: 无法加载模块:./Application
+
+[ 2017-07-27T15:44:47+08:00 ] 127.0.0.1 /signin.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000587s ]
+ERR: 无法加载模块:Signin
+
+[ 2017-07-27T16:43:50+08:00 ] 127.0.0.1 /cron.php&c=cron&a=dumpmysql
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000468s ]
+ERR: 无法加载模块:Cron
+
+[ 2017-07-27T16:47:41+08:00 ] 127.0.0.1 /signin.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001346s ]
+ERR: 无法加载模块:Signin
+
+[ 2017-07-27T17:59:59+08:00 ] 127.0.0.1 /signin.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000536s ]
+ERR: 无法加载模块:Signin
+
+[ 2017-07-27T18:04:47+08:00 ] 127.0.0.1 /signin.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+ERR: 无法加载模块:Signin
+
+[ 2017-07-27T20:04:44+08:00 ] 127.0.0.1 /vo.php?c=vo&a=save
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+ERR: 无法加载模块:Vo
+
+[ 2017-07-27T20:04:53+08:00 ] 127.0.0.1 /vo.php?c=vo&a=save
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+ERR: 无法加载模块:Vo
+
+[ 2017-07-27T20:26:05+08:00 ] 127.0.0.1 /signin.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+ERR: 无法加载模块:Signin
+
+[ 2017-07-27T20:26:37+08:00 ] 127.0.0.1 /signin.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000532s ]
+ERR: 无法加载模块:Signin
+
+[ 2017-07-27T20:28:33+08:00 ] 127.0.0.1 /signin.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000618s ]
+ERR: 无法加载模块:Signin
+

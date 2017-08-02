@@ -1,0 +1,66 @@
+
+<include file="Index/header" />
+
+    <div class="container">
+    <p>&nbsp</p>
+    <p>&nbsp</p>
+    <p>&nbsp</p>
+
+    
+    <section>
+      <div class="row">
+        <div class="col-md-8">
+          <article class="blog-post">
+            <div class="blog-post-image">
+              <section class="main-slider">
+                <ul class="bxslider">
+                <volist name="result['topPicNews']" id="vo">
+                  <li>
+                    <div class="slider-item">
+                    <div class="banner-info"><span>阅读数</span><i class="news_count node-{$vo.news_id}" news-id="{$vo.news_id}"></i></div>
+                      <a href="/index.php?c=detail&id={$vo.news_id}" target="_blank"><img src="{$vo.thumb}" alt="{$vo.title}"  height="350" width="750"></a>
+                      <h2><a href="/index.php?c=detail&id={$vo.news_id}" target="_blank">{$vo.title}</a></h2>
+                    </div>
+                  </li>
+                </volist>  
+                </ul>
+              </section>
+            </div>
+            
+          </article>
+          <!-- article -->
+          <volist name="result['listNews']" id="vo">
+          <article class="blog-post">
+            <div class="blog-post-body">
+              <h2><a href="/index.php?c=detail&id={$vo.news_id}" target="_blank">{$vo.title}</a></h2>
+              <div class="post-meta"><span>by <a href="#">{$vo.username}</a></span>/<span><i class="fa fa-clock-o"></i>
+                {$vo.create_time|date="Y-m-d H:s",###}
+                </span>/<span><i class="fa fa-comment-o"></i> <i news-id="{$vo.news_id}" class="news_count node-{$vo.news_id}"></i></span></div>
+              <p>{$vo.description}</p>
+              <div class="read-more"><a href="/index.php?c=detail&id={$vo.news_id}" target="_blank">继续阅读</a></div>
+            </div>
+          </article>
+          </volist>
+          <!-- article -->
+          
+        </div>
+
+        <div class="col-md-4 sidebar-gutter">
+        <!-- right-->        
+        <include file="Index/right" />
+      </div>
+    </section>
+    </div><!-- /.container -->
+<script>
+  var SCOPE = {
+    'count_url' : '/index.php?c=index&a=get_count',
+    
+  }
+</script>
+</body>
+<script src="/Public/js/jquery.js"></script>
+<script src="/Public/js/bootstrap.min.js"></script>
+<script src="/Public/js/home/jquery.bxslider.js"></script>
+<script src="/Public/js/home/mooz.scripts.min.js"></script>
+<script src="/Public/js/count.js"></script>
+</html>

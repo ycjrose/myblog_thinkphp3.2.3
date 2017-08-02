@@ -1,0 +1,139 @@
+<include file="Index/header" />
+<body>
+<div id="wrapper">
+
+  <include file="Index/nav"/>
+  <div id="page-wrapper">
+
+    <div class="container-fluid" >
+
+      <!-- Page Heading -->
+      <div class="row">
+        <div class="col-lg-12">
+
+          <ol class="breadcrumb">
+            <li>
+              <i class="fa fa-dashboard"></i>  <a href="/admin.php?c=positioncontent">推荐位管理</a>
+            </li>
+            <li class="active">
+              <i class="fa fa-table"></i>推荐位列表
+            </li>
+          </ol>
+        </div>
+      </div>
+      <!-- /.row -->
+      <div >
+        <button  id="button-add" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" ><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>添加 </button>
+      </div>
+      <div class="row">
+        <form action="/admin.php?c=positioncontent" method="get">
+          <div class="col-md-3">
+            <div class="input-group">
+              <span class="input-group-addon">推荐位</span>
+              <select class="form-control" name="position_id">
+                <option value='' >全部分类</option>
+                <foreach name="positioncontents" item="vo">
+                  <option value="{$vo.id}" <if condition="$vo['id'] eq $position_id">selected="selected"</if>>{$vo.name}</option>
+                </foreach>
+              </select>
+            </div>
+          </div>
+          <input type="hidden" name="c" value="positioncontent"/>
+          <input type="hidden" name="a" value="index"/>
+          <div class="col-md-3">
+            <div class="input-group">
+              <input class="form-control" name="title" type="text" value="{$title2}" placeholder="文章标题" />
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-primary"><i class="glyphicon glyphicon-search"></i></button>
+                </span>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <h3></h3>
+          <div class="table-responsive">
+            <form id="singcms-listorder">
+              <table class="table table-bordered table-hover singcms-table">
+                <thead>
+                <tr>
+                  <th width="14">排序</th>
+                  <th>id</th>
+                  <th>标题</th>
+                  <th>推荐位</th>
+                  <th>封面图</th>
+                  <th>时间</th>
+                  <th>状态</th>
+                  <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <volist name="contents" id="content">
+                  <tr>
+                    <td><input size=4 type='text'  name='listorder[{$content.id}]' value="{$content.listorder}"/></td><!--6.7-->
+                    <td>{$content.id}</td>
+                    <td>{$content.title}</td>
+                    <td>{$content.position_id|getPositionName=$positioncontents,###}</td>
+                    <td>
+                      {$content.thumb|isThumb}
+                    </td>
+                    <td>
+                        
+                        {$content.create_time|date="Y-m-d H:i",###}
+                    </td>
+                    <td><span attr-message="是否更改" attr-status="<if condition="$content['status'] eq 1">0<else/>1</if>"  attr-id="{$content.id}" class="sing_cursor singcms-on-off" id="singcms-on-off" >{$content.status|status}</span></td>
+                    <td><span class="sing_cursor glyphicon glyphicon-edit" aria-hidden="true" id="singcms-edit" attr-id="{$content.id}" ></span>
+                      <a id="singcms-delete"  attr-id="{$content.id}" attr-status="-1" attr-message="是否删除">
+                        <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
+                      </a>
+
+                    </td>
+                  </tr>
+                </volist>
+
+                </tbody>
+              </table>
+              <nav>
+
+              <ul class="pagination">
+                {$pageRes}
+              </ul>
+
+            </nav>
+              
+            </form>
+            <div>
+              <button  id="button-listorder" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" ></span>排序</button>
+              
+            </div>  
+            <br>
+            
+          </div>
+
+        </div>
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container-fluid -->
+
+  </div>
+  <!-- /#page-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+<script>
+  var SCOPE = {
+    'edit_url' : '/admin.php?c=positioncontent&a=edit',
+    'add_url' : '/admin.php?c=positioncontent&a=add',
+    'set_status_url' : '/admin.php?c=positioncontent&a=setStatus',
+    'sing_news_view_url' : '/index.php?c=view',
+    'listorder_url' : '/admin.php?c=positioncontent&a=listorder',
+    'push_url' : '/admin.php?c=positioncontent&a=push',
+    'delete_select_url' : 'admin.php?c=positioncontent&a=setStatusSelect'
+  }
+</script>
+
+<include file="Index/footer" />
